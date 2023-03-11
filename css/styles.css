@@ -19,6 +19,10 @@ ul {
     padding-left: 0;
 }
 
+img {
+    display: block;
+}
+
 body {
     font-family: var(--primery-font);
     color: var(--primery-text-color);
@@ -38,19 +42,17 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 
 /*======HEADER========*/
 
 .header {
-    padding-top: 24px;
-    border-bottom: solid var(--cornflower-color);
+    border-bottom: 1px solid var(--cornflower-color);
 }
 
 .header-logo {
     font-family: var(--secondary-font);
-    font-size: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -73,6 +75,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
+    display: block;
+    padding: 24px 0;
 }
 
 .header-link:hover,
@@ -123,7 +127,9 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -150,16 +156,8 @@ body {
 }
 
 .hero {
-}
-
-.hero-wrap {
     background: var(--primery-text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 188px 472px;
-    gap: 48px;
-    
+    padding: 188px 0;
 }
 
 /*======ADVANTAGES========*/
@@ -200,12 +198,10 @@ body {
 
 .advantages-list {
     display: flex;
-    justify-content: center;
     gap: 24px;
 }
 
 .advantages-item {
-    width: calc((100% - 3*24px)\4);
     width: 264px;
 }
 
@@ -222,24 +218,25 @@ body {
     margin-bottom: 72px;
 }
 
+.eexamples {
+    padding-bottom: 120px;
+}
+
 .examples-list {
     padding-bottom: 120px;
 }
 
 .examples-list {
     display: flex;
-    align-items: center;
     gap: 24px;
 }
 
-.examples-item {
-    width: calc((100% - 2*24px)\3);
-}
 
 /*======OUR TEAM========*/
 
 .team {
     background: var(--backgrounds-color);
+    padding: 120px 0;
 }
 
 .team-title {
@@ -250,7 +247,6 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primery-text-color);
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -260,31 +256,30 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
-    margin-top: 32px;
     margin-bottom: 8px;
-    text-align: center;
 }
 
 .team-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    padding-bottom: 32px;
-    text-align: center;
 }
 
 .team-list {
-    padding-bottom: 120px;
     display: flex;
-    align-items: center;
     gap: 24px;
 }
 
 .team-item {
-    width: calc((100% - 3*24px)\4);
     background: var(--accent-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+}
+
+.profile {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
 }
 
 /*======FOOTER========*/
@@ -301,7 +296,6 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--tertiary-text-color);
-    padding-top: 100px;
     margin-bottom: 16px;
 }
 
@@ -313,13 +307,12 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cornflower-color);
-    padding-bottom: 100px;
     max-width: 264px;
 }
 
-
 .footer {
     background: var(--primery-text-color);
+    padding: 100px 0;
 }
 
 /*======PORTFOLIO========*/
@@ -350,32 +343,24 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
-    margin-top: 32px;
     margin-bottom: 8px;
-    padding-left: 16px;
 }
 
 .portfolio-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    padding-bottom: 32px;
-    margin-top: 8px;
-    padding-left: 16px;
 }
 
 .portfolio-list {
-    padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
     margin-top: 72px;
-    padding-bottom: 120px;
 }
 
 .portfolio-item {
-    flex-basis: calc((100% - 2*48px)\3);
     background: var(--accent-color);
 }
 
@@ -383,7 +368,6 @@ body {
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-top: 96px;
 }
 
 .portfolio-border {
@@ -392,4 +376,9 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+}
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
